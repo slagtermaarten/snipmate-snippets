@@ -1,16 +1,16 @@
 #PREAMBLE
 #newcommand
 snippet nc
-	\newcommand{\${1:cmd}}[${2:opt}]{${3:realcmd}}${4}
+	\newcommand{\${1:cmd}}[${2:opt}]{${3:realcmd}} ${4}
 #usepackage
 snippet up
-	\usepackage[${1:[options}]{${2:package}}${3}
+	\usepackage[${1:options}]{${2:package}} ${3}
 #newunicodechar
 snippet nuc
-	\newunicodechar{${1}}{${2:\ensuremath}${3:tex-substitute}}}${4}
+	\newunicodechar{${1}}{${2:\ensuremath}${3:tex-substitute}}} ${4}
 #DeclareMathOperator
 snippet dmo
-	\DeclareMathOperator{${1}}{${2}}${3}
+	\DeclareMathOperator{${1}}{${2}} ${3}
 
 #DOCUMENT
 # \begin{}...\end{}
@@ -60,17 +60,14 @@ snippet \
 snippet enumerate
 	\begin{enumerate}
 		\item ${1}
-		${2}
 	\end{enumerate}
 # Itemize
 snippet itemize
 	\begin{itemize}
 		\item ${1}
-		${2}
 	\end{itemize}
-snippet it
+snippet item
 	\item ${1}
-	${2}
 # Description
 snippet desc
 	\begin{description}
